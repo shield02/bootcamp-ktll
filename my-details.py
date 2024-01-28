@@ -1,3 +1,5 @@
 print("Uduak Edikan Eti-mfon")
 print("Akwa Ibom")
-print("Nigerian")
+print("Nigeria")
+print("I am learning python programming")
+print("Python is interesting")
