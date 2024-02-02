@@ -1,1 +1,1 @@
-print('there is fun in python')
+print('there is fun in pgython')
