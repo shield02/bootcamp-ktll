@@ -59,3 +59,26 @@ print(2<4) #this is for less than
 print(2==4) #checking for equality
 print(2!=4) #checking non equality 
 
+"""
+#DATA TYPES
+In python data types tell the computer the type of data you are working with
+Primitive data types: these are data types that form the core basics of python
+   Examples:
+     Integersg - all whole digits both negative and positive
+     (8,-9) 
+     Floats - all decimal digits
+     (2.3, 7.9)
+     Strings - all alpha- numerics. These must always be written inside quotes. Could either be single or double.
+     ('y0988uuii') ('888999'). Strings are basically anything you put inside a quote.
+     Booleans - simply True or False
+     None - simply does not exist
+
+Data structures :These are ways of using the primitives as groups
+   Example:
+      List
+      Tuple
+      Set
+      Dictionary     
+"""
+
+
