@@ -1,1 +1,0 @@
-print('uduak my friend')
