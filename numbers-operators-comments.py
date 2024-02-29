@@ -81,4 +81,8 @@ Data structures :These are ways of using the primitives as groups
       Dictionary     
 """
 
+#git fetch upstream master
+#git checkout origin/master
+#git merge upstream/mastergi
+
 
