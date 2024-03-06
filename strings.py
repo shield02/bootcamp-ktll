@@ -20,11 +20,11 @@ A string could be just about any alpha numeric character
 'i/m hungry'
 "i/m hungry" # this works perfectly
 
-#we can concatenate (join) two strings
-first_name = "Emem"
-last_name = "Udofia"
-full_name = first_name + - - +last_name
-"Emem" + "Udofia"
+# We can concatenate (join) two string
+first_name = "Itoro"
+last_name = "Uduak"
+full_name = first_name + " " + last_name
+"Itoro" + "Uduak"
 print(full_name)
 
 #you can also multiply a string with an integer
@@ -35,18 +35,15 @@ print(hail_Emem_2x)
 print(len("Itoro"))
 print(len("Itoro "))
 
+
 #STRING FORMATTING
 print("Itoro",uppercase()) 
 print("Itoro",lower())
 
-print("my name is" + first_name)
-print("my name is" + first_name + ' ' + last_name)
-print("my name is", first_name, last_name)
-print("my name is {} {}, my fullname is {}".format(first_name,last_name,full_name)) #{} is called a placeholder.This is usinf format function
-# The first placehlder will be replaced by the first value of format{}
-# and the second place holder will be replaced by the second value of format{}
-print(f"my name is {first_name} {last_name}") #this is called the f-string method of formatting strings
-
-
-s
-
+print("My name is " + first_name)
+print("My name is " + first_name + ' ' + last_name)
+print('My name is', first_name, last_name)
+print('My name is {} {}'.format(first_name, last_name)) # {} is called a placeholder. This is using format function
+# The first placeholder will be replaced by the first value of format() 
+# and the second placeholder will be replaced by the second value of format()
+print(f'My name is {first_name} {last_name}') # this is called the f-string method of formatting strings
