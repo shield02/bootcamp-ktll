@@ -47,5 +47,5 @@ print (Result)
 print (Result[1:5])
 print (Result[1:9])
 print (Result[1:8:2])
-print (Result[11:0:-1])
+print (Result[-1:-11:-1])
 
