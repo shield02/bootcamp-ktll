@@ -38,7 +38,14 @@ Write a command that will give the following output
 """
 
 #Solution 2
+Greeting = "Hello"
+Punctuation = ","
+Place = "world"
+Result = Greeting + Place
+print (Result)
 
-
-
+print (Result[1:5])
+print (Result[1:9])
+print (Result[1:8:2])
+print (Result[11:0:-1])
 
