@@ -43,7 +43,7 @@ TIP: to check whether a number is even use the modulo operator.
 
 #ANSWER TO QUESTION 2
 Number = 9
-print (Number % 2) #if this brings a remainder that means its an odd number
+print (Number % 2) #if this brings a remainder,that means its an odd number
 if (Number % 2) == 0:
     print("Even number")
 else:
@@ -64,4 +64,4 @@ if Happy > 6:
     print("Hello world") 
 else:
     print("Hi world")
-    
+
