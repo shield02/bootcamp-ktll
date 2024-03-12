@@ -25,3 +25,11 @@ In a case that the number is not even, print "Odd number".
 
 TIP: to check whether a number is even use the modulo operator.
 """
+
+"""
+# Question 3
+------------------------------------------------------------------
+Create a variable called `happy` and assign an integer to it.
+If the number in that variable is greater than 6, print "Hello World!!!"
+but if the number is less than 6, print "Hi World!!!"
+"""
