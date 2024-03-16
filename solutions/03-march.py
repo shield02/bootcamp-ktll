@@ -37,10 +37,11 @@ print(statement[1:11:3])
 print(statement[0:13:2])
 WordOne = 'hello'
 WordTwo = ','
-WordThree =  'world'
+WordThree = 'world'
 salutation = WordOne + WordThree
 print(salutation)
 print(salutation[1:5:1])
 print(salutation[1:9:1])
 print(salutation[1:8:2])
 print(salutation[-1:-11:-1])
+print(salutation[::-1])
