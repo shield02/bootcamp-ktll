@@ -27,27 +27,27 @@ If the number in that variable is greater than 6, print "Hello World!!!"
 but if the number is less than 6, print "Hi World!!!"
 """
 
-
-identity = 'username'
-length_of_identity = len(identity)
-print(length_of_identity)
-if 8 < 3:
+# Number 1
+username = 'identity'
+length_of_username = len('identity')
+print(length_of_username)
+if length_of_username < 3:
     print("Invalid username. Must be at least 3 characters long")
-elif 8 > 15:
+elif length_of_username > 15:
     print("Invalid username. Must be at most 15 characters long")
 else:
     print("Valid username")
 
+# Number 2
 number = 8
-if (8%2) == 0:
+if (number%2) == 0:
     print("Even number")
 else:
     print("Odd number")
 
-mood = 'happy'
-mood = 9
-if 9 > 6:
+# Number 3
+happy = 9
+if happy > 6:
     print("Hello World!!!")
 else:
     print("Hi World!!!")
-    
