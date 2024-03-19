@@ -94,3 +94,53 @@ elif 5 == 5:
     print('We are even')
 else:
     print('Omo we have lost our way oh!!!')
+    
+# Revision
+"""
+How do we use the elif?
+How does the modulo work?
+"""
+
+# elif
+# How to ask a user for a value (int) or string
+# We can ask a user to type something for us using?
+color = input("What is your name? ")
+print(color)
+
+# elif allows you write multiple ifs which enables you to test for more conditions
+if color == 'Yellow':
+    print("I have been expecting you", color)
+elif color == 'Blue':
+    print("Where have you been", color, "my friend")
+elif color == "Red":
+    print("You have been so far away", color)
+else:
+    print("I have no colors left")
+
+# modulo - this is used to find the remainder of a division
+print("division", 4/2)
+
+# elif
+# How to ask a user for a value (int) or string
+# We can ask a user to type something for us using?
+color = ''
+
+# elif allows you write multiple ifs which enables you to test for more conditions
+if color == 'Yellow':
+    print("I have been expecting you", color)
+elif color == 'Blue':
+    print("Where have you been", color, "my friend")
+elif color == "Red":
+    print("You have been so far away", color)
+else:
+    print("I have no colors left")
+
+# modulo - this is used to find the remainder of a division
+print("division", 4/2)
+print("division", 5/2)
+print('remainder using modulo', 4%2)
+print('remainder', 5%2)
+
+# syntax error only comes when you don't type correctly in python
+if 1 < 8:
+    print("Yes it is")
