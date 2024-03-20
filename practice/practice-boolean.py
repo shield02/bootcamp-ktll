@@ -42,3 +42,16 @@ elif clothing == 'shirt':
     print(f'I only wear a {clothing} for work')
 else:
     print('I can\'t go wrong in a gown')
+
+hair_extensions = input('What kind of hair do you like? ')
+print(hair_extensions)
+if hair_extensions == 'kinky':
+    print(f'I can reuse {hair_extensions} a couple of times.')
+elif hair_extensions == 'wig':
+    print(f'I really dont like {hair_extensions}s')
+elif hair_extensions == 'attachment':
+    print(f'The cost of {hair_extensions} is expensive.')
+elif hair_extensions == 'crotchet':
+    print(f'I\'ve never used {hair_extensions}s before')
+else:
+    print('It\'s like I\'ll just carry my natural hair oh!')
