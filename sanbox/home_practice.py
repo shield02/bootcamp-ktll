@@ -55,10 +55,35 @@ while number >= 7:
     number = number - 7
 
 '''
-Write a program to print first 10 integers and their squares
-using while loop
+Write a program to print the following using while loop
+First 10 even numbers
+First 10 odd numbers
+First 10 natural numbers
+First 10 whole numbers
 '''
+# First 10 even numbers
 number = 1
-while 1 <= 10:
-    print('Ah ha', number)
+while number <= 20:
+    if number % 2 == 0:
+        print('even', number)
+    number = number + 1
+
+# First 10 odd numbers
+digit = 1
+while digit <= 20:
+    if digit % 2 != 0:
+        print('odd', digit)
+    digit = digit + 1
+
+# First 10 natural numbers
+number = 1
+while number <= 10:
+    print('natural', number)
+    number = number + 1
+
+# First 10 whole numbers
+number = 0
+while number <= 9:
+    print('whole', number)
+    number = number + 1
 
