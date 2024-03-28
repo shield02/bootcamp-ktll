@@ -42,12 +42,6 @@ for o in range(0,20,1):
     print(o)
     print(o*o)
 
-'''
-Loop through numbers 1 - 20
-For 4 and 13, print "x is unlucky"
-For even numbers, print "x is even"
-For odd numbers, print "x is odd"
-'''
 # Using for loop
 for y in range(1,21,1):
     if y % 2 == 0:
@@ -232,6 +226,52 @@ while digit < 500:
 for d in range(10,500):
     if d % 3 == 0 or d % 5 == 0:
         print(d)
+
+'''
+Loop through numbers 1 - 20
+For 4 and 13, print "x is unlucky"
+For even numbers, print "x is even"
+For odd numbers, print "x is odd"
+Using both while loop and for loop
+'''
+# Using while loop
+number = 1
+while number <= 20:
+    if number == 4 or number == 13:
+        print(f'{number} is unlucky')
+    elif number % 2 == 0:
+        print(f'{number} is even')
+    else:
+        print(f'{number} is odd')
+    number = number + 1
+
+# Using for loop
+for e in range(1,21):
+    if e == 4 or e == 13:
+        print(f'{e} is unlucky')
+    elif e % 2 == 0:
+        print(f'{e} is even')
+    else:
+        print(f'{e} is odd')
+
+
+# Convert the following loop into a for loop
+x = 4
+while x <= 8:
+    print(x*10)
+    x += 2
+
+for y in range(4,9,2):
+    multiple = y * 10
+    print(multiple)
+
+
+
+
+
+
+
+
 
 
 
