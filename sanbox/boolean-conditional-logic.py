@@ -30,8 +30,8 @@ and: gives a true only when both sides are true
 or: gives a False only when both sides are false
 
 False and False ==  False
-False and True ==
-True and False ==
+False and True ==  False
+True and False == False
 True and True == True
 
 True or false == True
