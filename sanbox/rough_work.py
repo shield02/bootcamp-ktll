@@ -265,6 +265,15 @@ for y in range(4,9,2):
     multiple = y * 10
     print(multiple)
 
+# Find out how many times a number is divisible by 2.
+number = int(input('Enter a digit: '))
+times = 0
+while number % 2 == 0:
+    number = number // 2
+    times += 1
+    print(times)
+  
+
 
 
 
