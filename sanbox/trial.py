@@ -1,18 +1,29 @@
-'''
-Print out the prime numbers between 100 and 200
-Using while loop
-Using for loop
-'''
-# Using for loop
-for n in range(100,201):
-    if n > 1:
-        for i in range(2,n):
-            if n % i == 0:
-                break
-        else:
-            print(n)
+# QUESTION 1
+"""
+Using a loop print out the word "programming" like this
+Pp
+Rr
+Oo
+Gg
+....till the end of the word.
+"""
 
-# Using for loop
-number = 100
-while number <= 200:
-    if number % 2 == 0:
+"""
+# Question 4
+Write a while loop to display numbers from 10 to 1.
+"""
+
+"""
+# Question 5
+Using a nested for loop, print the following output
+111111111
+222222222
+...
+888888888
+999999999
+"""
+r = 9
+for i in range(1,r+1):
+    for j in range(1,r+1):
+        print(i , end='')
+    print()
