@@ -1,5 +1,0 @@
-print("Itoro Eti-mfon")
-print("Akwa Ibom State")
-print("Nigeria")
-print("I am now learning python programming language")
-print("python is interesting")
