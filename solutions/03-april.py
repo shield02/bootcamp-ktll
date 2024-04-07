@@ -12,7 +12,7 @@ till the end of the word.
 word = "programming"
 
 for letter in word:
-    print((letter * 2).title())
+    print(letter.upper(), letter)
 
 """
 # Question 2
