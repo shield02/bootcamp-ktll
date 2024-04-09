@@ -11,7 +11,6 @@ Question #1
 Research 10 methods used with list object operations and show at least
 two examples of each of the methods.
 """
-
 """
 Question #2
 ----------------------------------------------------------------------
