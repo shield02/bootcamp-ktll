@@ -101,6 +101,11 @@ while number <= 10:
     print(number, num_2)
     number = number + 1
 
+# Using a for loop
+for i in range(1,11):
+    square = i ** 2
+    print(square)
+
 '''
 Write out a program that prints numbers from 1 to 10, formatted like this
 Current value: 1
