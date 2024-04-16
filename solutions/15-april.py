@@ -97,8 +97,6 @@ print("June has " + str(june_days) + " days.")
 
 # Solution 4
 def month_days(name_month, number_days):
-    name_month = 'June'
-    number_days = '30'
     print(f'{name_month} has {number_days} days')
 
 
