@@ -8,27 +8,23 @@ last name and print last name before first name.
 
 
 # Solution 1
-def print_full_name(first_name, last_name):
+def print_full_name():
     first = input('Enter your first name: ')
     last = input('Enter your last name: ')
     print(last,  first)
 
 
-my_first_name = 'Uduak'
-my_last_name = 'Eti-mfon'
-print_full_name(my_first_name,  my_last_name)
+print_full_name()
 
 
 # Another example
-def print_fuul_name(first_name, last_name):
+def print_fuul_name():
     first = input('Enter your first name: ')
     last = input('Enter your last name: ')
     print(last,  first)
 
 
-my_first_name = 'Gods-will'
-my_last_name = 'Grace'
-print_fuul_name(my_first_name, my_last_name)
+print_fuul_name()
 
 
 """
@@ -80,16 +76,12 @@ print("Hello " + name + ". Your lucky number is " + str(number))
 
 # Solution 3
 def lucky_number(name):
-    word = 'Hello'
-    sentence = word + ' ' + name + ','
-    phrase = 'Your lucky number is '  
-    s = str(number)
-    message = phrase + s
-    print(sentence, message)
+    name = 'keme'
+    number = len(name) * 7
+    print(f'Hello {name}. Your lucky number is {number}')
 
 
 name = 'Keme'
-number = len(name) * 7
 lucky_number(name)
 
 """
@@ -105,9 +97,13 @@ print("June has " + str(june_days) + " days.")
 
 # Solution 4
 def month_days(name_month, number_days):
-    print(name_month, number_days)
+    name_month = 'June'
+    number_days = '30'
+    print(f'{name_month} has {number_days} days')
 
 
-the_name_month = 'June has'
-the_number_days = '30 days'
-month_days(the_name_month, the_number_days)
+name_month = 'June'
+number_days = '30'
+month_days(name_month, number_days)
+
+
