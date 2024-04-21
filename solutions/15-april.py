@@ -5,6 +5,7 @@ Write a function that asks a user for his first name and then his
 last name and print last name before first name.
 ------------------------------------------------------------------
 """
+
 # ANSWER1
 
 
@@ -19,9 +20,7 @@ def print_last_name(last_name):
 my_first_name = input("what is your first name?")
 my_last_name = input("what is your last name?")
 print_last_name(my_last_name)
-print_first_name(my_first_name) 
-
-
+print_first_name(my_first_name)
 
 
 """
@@ -38,6 +37,17 @@ nothing.
 If your name is "John" for example.
 -------------------------------------------------------------------
 """
+
+
+# ANSWER 2
+def say_welcome(name):
+    print("welcome", name)
+
+
+name = input("what is your name?")
+print("welcome", name)
+
+
 
 """
 Question #3
