@@ -57,7 +57,7 @@ print(max('w', 'e', 't', 'a'))
 """
 # SETS
 ------------------------------------------------------------------
-Set is a compound data structure that is unordered sequence and mutable.
+Set is a compound data structure that is unordered sequence and immutable.
 A set only allows unique elements. To create an empty set, you can use a
 set contructor.
 """
