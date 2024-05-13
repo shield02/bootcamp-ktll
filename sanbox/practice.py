@@ -1,5 +1,3 @@
-
-# Question 1
 """Create a variable for the string 'Python is Fun!' and
 write the commands that will return the following
 - 'ytho'
@@ -12,11 +10,11 @@ write the commands that will return the following
 """
 
 
-# solutions
+#solutions
 my_variable = "python is fun!"
 
 
-# commands that will return the following;
+#commands that will return the following;
 
 print("ytho")
 print("Pytho")
@@ -42,16 +40,16 @@ Write a command that will give the following output
 - 'dlrowolleh'
 """
 
-# solution = creating three variables to store
+#solution = creating three variables to store
 word_one = "hello"
 punctuation = ","
 word_two = "world"
 
-# concatenation of the first and third variable
+#concatenation of the first and third variable
 result = word_one + word_two
 print(result)
 
-# commands that will return the following;
+##commands that will return the following;
 print("ello")
 print("elloworl")
 print("elwr")
