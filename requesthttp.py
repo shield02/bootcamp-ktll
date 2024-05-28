@@ -71,6 +71,8 @@ else:
 
 urls = ["https://api.github.com", "https://api.github.com/invalid"]
 """
+# CLASSWORK
+-------------------------------------------------------------------------------
 Write a program that visits both of the urls. Since you have a list of urls, 
 you can use a loop here. Make use of the try-except
 block in the program. Catch an exception called HTTPError and print the following
