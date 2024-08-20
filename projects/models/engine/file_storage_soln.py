@@ -53,6 +53,3 @@ class FileStorage:
                     self.new(eval(name)(**obj))
         except FileNotFoundError:
             pass
-
-
-obje = FileStorage()
