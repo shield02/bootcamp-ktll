@@ -126,6 +126,7 @@ You will need to import `storage` from `__init__` and base model as well
     * Only “simple” arguments can be updated: string, integer and float. You can assume nobody will try to update list of ids or datetime
 
 ### TASK 7
+
 Write a class `User` (`models/user.py`) that inherits from BaseModel:
     * Public class attributes:
         * `email`: (string) - empty string
