@@ -123,3 +123,79 @@ def number_of_letters(text):
     return len(text)
 
 print(number_of_letters("Friday is a good day"))
+
+
+def greet_me():
+    name = "Yellow"
+    age = 90
+    state_of_origin = 'mars'
+
+    return f"Hello {name}, you are {age} years old. You come from {state_of_origin}. Welcome here." 
+
+print(greet_me())
+
+def greet_specific_me(name, age, state):
+    return f"Hello {name}, you are {age} years old. You come from {state}. Welcome here." 
+
+print(greet_specific_me("Purple", 48, "Abia"))
+print(greet_specific_me("Green", 180, "Jupiter"))
+print(greet_specific_me("White", 10, "Womb"))
+
+# Classwork
+"""
+Write a function that does not take any argument
+the function will have a variable `age` and will
+return `age` to the power of 2
+
+tips: you use ** to raise a number to any power
+in python.
+"""
+# age = int(input("What is your number: "))
+def age():
+    return age
+print(age())
+
+def age_square():
+    age = 45
+    return age**2
+
+print(age_square())
+
+"""
+Write a function that takes two argument which 
+will be any number of your choice and your
+favourite color. then returns the color
+multiplied by the number.
+"""
+def multiply_text(num, color):
+    return num * color
+
+print(multiply_text(3, "purple"))
+
+"""
+Write a function that takes 2 arguments, both of 
+them numbers and multiply the one of the arguments
+by 2 and then add the second argument to the result
+of the first one.
+"""
+def numbers(val1, val2):
+    result = val1 * 2
+    return result + val2
+
+print(numbers(8, 30))
+
+"""
+Write a function that takes 3 arguments, all of them
+strings and return the addition of the length of the 
+3 strings.
+"""
+def total_string(str1, str2, str3):
+    return len(str1) + len(str2) + len(str3)
+result = total_string("str1", "str2", "str3")
+print(result)
+
+def rules(a, b, c):
+    return len(a) + len(b) + len(c)
+
+print(rules("stand", "sit", "kneel"))
+
