@@ -206,11 +206,28 @@ print(rules("stand", "sit", "kneel"))
 the function will have a variable that store
 the name of any country and returns a sentence
 with the name of the country.
+"""
+def name_of_country():
+    nation = "Nigeria"
+    return f"You are from {nation}"
+print(name_of_country())
 
+"""
 2. Write a function that takes 2 arguments both of them
 numbers and multiplies each of the number by 2 then add
 both of them and return the answer.
+"""
+def add_two_nums(num1, num2):
+    r1 = num1*2
+    r2 = num2*2
+    result = r1 + r2
+    return result
+print(add_two_nums(5,7))
 
+"""
 3. Write a function that takes one argument which will be
 a text and returns the text in capital letters
 """
+def text_sol(animal):
+    return animal.upper()
+print(text_sol("giraffe"))
