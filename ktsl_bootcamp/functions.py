@@ -206,11 +206,48 @@ print(rules("stand", "sit", "kneel"))
 the function will have a variable that store
 the name of any country and returns a sentence
 with the name of the country.
+"""
+def name_of_country():
+    nation = "Nigeria"
+    return f"You are from {nation}"
+print(name_of_country())
 
+"""
 2. Write a function that takes 2 arguments both of them
 numbers and multiplies each of the number by 2 then add
 both of them and return the answer.
+"""
+def add_two_nums(num1, num2):
+    r1 = num1*2
+    r2 = num2*2
+    result = r1 + r2
+    return result
+print(add_two_nums(5,7))
 
+"""
 3. Write a function that takes one argument which will be
 a text and returns the text in capital letters
+"""
+def text_sol(animal):
+    return animal.upper()
+print(text_sol("giraffe"))
+
+# ASSINGMENTS II - FUNCTIONS
+"""
+1. Write a function that takes three arguments name, age, hobby
+and create 3 variables new_name, new_age, new_hobby in the
+function.
+new_name will be the name but starts with a capital letter
+new_age will be the age raised to 5
+new_hobby will be hobby in uppercase letters
+Then return a sentence with the three new variables
+"""
+
+"""
+2. Write a function that takes 2 arguments both of them numbers
+create 3 variables inside the function.
+the first new variable will take argument 1 * 6
+the second new argument will take argument 2 % 2
+then the third varible will take first new varible + second new variable
+then return third new variable. 
 """
