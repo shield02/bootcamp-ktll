@@ -104,4 +104,25 @@ bone = "scapula"
 bone[5] # will give us l
 
 
+# ASSIGNMENTS
+"""
+Find the letter at the 6th, 8th, 12th, 25th index of the following
+"""
+ocean = "pacific ocean"
+mountain = 'mount kilimangaro'
+place = "national park"
+
+"""
+From the following find which index gives the letter
+"""
+word = 'unscrupulous' # letter l
+game = 'carom billiards' # letter d
+plant = 'ashwagandha' # letter n
+
+"""
+Create 3 variables of different strings and find
+the length of each of the strings, then find
+the letter at the 1st, 3rd, and 9th index.
+"""
+
 
