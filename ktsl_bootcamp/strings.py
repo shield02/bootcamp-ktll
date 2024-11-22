@@ -47,7 +47,7 @@ special[5] # will give @
 # When you use a number that is bigger than the length of the string
 # you will get an error called indexError
 # For example
-special[12] # you will get index error. because the length of the string is not up to 12
+# special[12] # you will get index error. because the length of the string is not up to 12
 
 # We can use len() to check the length of a string
 len(special) # will give 7
@@ -90,7 +90,7 @@ abia = 'lawson'
 jos = 'lawan'
 kano = 'sanusi'
 
-abia[8] # will give IndexError
+# abia[8] # will give IndexError
 jos[1] # will give a
 kano[4] # will give s
 
@@ -124,5 +124,78 @@ Create 3 variables of different strings and find
 the length of each of the strings, then find
 the letter at the 1st, 3rd, and 9th index.
 """
+
+
+# Functions with string
+def first_index(word):
+    """It returns the letter at the first index"""
+    return word[0]
+
+result = first_index("Python")
+print(result)
+
+item = "Water"
+result = first_index(item)
+print(result)
+
+def any_given_index(word, index):
+    """Should return the letter at the given index"""
+    return word[index]
+
+fruit = 'mango'
+result = any_given_index(fruit, 3)
+print(result)
+
+### CLASSWORK
+"""
+Write a function that takes a word and returns
+the letter at the second index.
+"""
+food = "spaghetti"
+def second_index(food):
+    """Returns the letter with the second index"""
+    return food[1]
+
+result = second_index(food)
+print(result)
+
+"""
+Write a function that takes two arguments
+a word and the index and returns the letter at
+the given index
+"""
+def word_and_index(pet, index):
+    """returns the letter at first index"""
+    return pet[index]
+pet = 'dog'
+result = word_and_index(pet, 1)
+print(result)
+
+# Getting the last letter from a string
+"""
+In a situation where you don't know how long 
+a string is but you want to return the last
+letter of the string, you can achive this in two
+way.
+
+#1 - is to use negative index and in this case you
+will use -1
+#2 - you can use the len() function
+"""
+# 1 - using negative index
+sentence = "I am learning programming"
+result = sentence[-1] # will give you the last letter of the string
+print(result)
+
+result = sentence[-2]
+print(result)
+
+# 2 - using the len() function
+length = len(sentence)
+result = sentence[length - 1]
+print(result)
+
+result = sentence[length - 2]
+print(result)
 
 
