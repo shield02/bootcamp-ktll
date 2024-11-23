@@ -198,4 +198,21 @@ print(result)
 result = sentence[length - 2]
 print(result)
 
+### ASSIGNMENT
+"""
+Write a function that takes one argument, a word and returns
+the last letter of the word using negative index
+"""
+
+"""
+Write a function that takes a word, finds the length of the word
+and returns the letter of the 2nd to the last index using negative
+index.
+"""
+
+"""
+Write a function that takes a word, finds the length of the word
+subtracts 3 from the index and returns the letter at the index of
+the remainder.
+"""
 
