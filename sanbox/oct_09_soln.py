@@ -14,3 +14,9 @@ x = 20 + "Hello World"
 print(x)
 print(type(x))
 
+def multiply_firstname_by_3(firstname):
+    result = firstname * 3
+    return result
+
+result = multiply_firstname_by_3("ima")
+print(result)
