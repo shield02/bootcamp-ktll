@@ -112,6 +112,21 @@ ocean = "pacific ocean"
 mountain = 'mount kilimangaro'
 place = "national park"
 
+print(ocean[6])
+print(ocean[8])
+print(ocean[12])
+# print(ocean[25])
+
+print(mountain[6])
+print(mountain[8])
+print(mountain[12])
+# print(mountain[25])
+
+print(place[6])
+print(place[8])
+print(place[12])
+# print(place[25])
+
 """
 From the following find which index gives the letter
 """
@@ -119,11 +134,31 @@ word = 'unscrupulous' # letter l
 game = 'carom billiards' # letter d
 plant = 'ashwagandha' # letter n
 
+print('unscrupulous', word[8])
+print('carom billiards', game[13])
+print('ashwagandha', plant[7])
+
 """
 Create 3 variables of different strings and find
 the length of each of the strings, then find
 the letter at the 1st, 3rd, and 9th index.
 """
+petname = 'zennacharib'
+print(len(petname))
+print(petname[1])
+print(petname[3])
+print(petname[9])
+
+petnameagain = 'malaika'
+print(len(petnameagain))
+print(petnameagain[1])
+print(petnameagain[3])
+print(petnameagain[9])
+
+petnamethird = 'hercules'
+print(len(petnamethird))
+print(petnamethird[1])
+print(petnamethird[9])
 
 
 # Functions with string
@@ -203,16 +238,36 @@ print(result)
 Write a function that takes one argument, a word and returns
 the last letter of the word using negative index
 """
+def last_letter(day):
+    return day[-1]
+day = "tuesday"
+print(last_letter(day))
 
 """
 Write a function that takes a word, finds the length of the word
 and returns the letter of the 2nd to the last index using negative
 index.
 """
+def word(sermon):
+    word_len = len(sermon)
+    print(word_len)
+    return sermon[-2]
+sermon = "salvation"
+print(word(sermon))
 
 """
 Write a function that takes a word, finds the length of the word
 subtracts 3 from the index and returns the letter at the index of
 the remainder.
 """
+def animal(dinosaur):
+    return dinosaur[len(dinosaur) - 3]
+dinosaur = "giganotosaurus"
+print (animal(dinosaur))
+
+def drug(antibiotic):
+    length = len(antibiotic)
+    return antibiotic[length - 3]
+antibiotic = "azithromycin"
+print (drug(antibiotic))
 
