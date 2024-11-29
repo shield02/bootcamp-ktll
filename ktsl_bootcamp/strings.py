@@ -153,12 +153,12 @@ petnameagain = 'malaika'
 print(len(petnameagain))
 print(petnameagain[1])
 print(petnameagain[3])
-print(petnameagain[9])
+# print(petnameagain[9])
 
 petnamethird = 'hercules'
 print(len(petnamethird))
 print(petnamethird[1])
-print(petnamethird[9])
+# print(petnamethird[9])
 
 
 # Functions with string
@@ -270,4 +270,71 @@ def drug(antibiotic):
     return antibiotic[length - 3]
 antibiotic = "azithromycin"
 print (drug(antibiotic))
+
+
+# STRING SLICING
+"""
+String slicing has to do with us using string index to extract a part
+or group of letters from a string.
+
+So you specify the 
+    - index you want to start from, ie. start
+    - the index you want to stop at, ie. stop
+    - the number of characters you want to pick at a time, ie. step
+
+So you will specify this inside a [] like the example below.
+"""
+# Example
+country = 'Nigeria'
+# let's say we want only 'Niger', then we can slice
+result = country[0:5:1]
+print(result)
+
+# we can also the samething like this
+result = country[:5:]
+print(result)
+
+animal = 'kangaroo'
+result = animal[1:6] # because our step is 1 we may not put the second :
+print(result)
+
+# Classwork
+# Fine the index that will give us the word 'roun' from 'cameroun'
+country = 'cameroun'
+result = country[4:8]
+print(result)
+
+# Negative index for slicing
+# We can use negative index for the previous classwork question
+result = country[-4:]
+print(result)
+
+# Classwork
+# find the index that will slice 'ion' fron 'conditional' using negative index
+word = 'conditional'
+result = word[-5:-2] # ion
+result = word[-3:-6:-1] # noi
+print(result)
+
+flower = 'hibiscus'
+result = flower[::-1]
+print(result)
+
+# Write a function that takes 4 arguments, a word
+# a strat index, stop index, and a step with a default
+# value of 1. The function will return the string that
+# results from the slicing using those index.
+def slice_word(word, start, stop, step=1):
+    """Slice a word using the index."""
+    return word[start:stop:step]
+
+result = slice_word("aeroplane", 0, 4)
+print(result)
+
+# Classwork
+# Use the function above to slice 'plane' from the word
+# 'aeroplane'
+result = slice_word("aeroplane", 4, 9)
+print(result)
+
 
