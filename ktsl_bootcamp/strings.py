@@ -337,4 +337,14 @@ print(result)
 result = slice_word("aeroplane", 4, 9)
 print(result)
 
+# CLASSWORK
+# Write a function that takes a word, a start, and stop value
+# and slice the word using the start and stop value
+
+def take_word(word, start, stop):
+    """Slice the word using the start and stop value."""
+    return word[start:stop]
+
+result = take_word("announcing", 0, 4)
+print(result)
 
