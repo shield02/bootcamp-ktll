@@ -91,3 +91,31 @@ elif word >= 5 and word < 10:
     print("better")
 else:
     print("word is too long")
+
+# CLASSWORK
+"""
+Write a function that takes a word and returns the last
+5 letters if the word is more than 10 letters or returns
+the last 4 letters if the word is 8 or less letters or returns
+the last 3 letters if the word is 5 or less letters or else
+it should just return the last letter.
+"""
+def magic_word(word):
+    """Magic word"""
+    if (len(word) > 10):
+        return word[-5:]
+    elif (len(word) <= 8):
+        return word[-4:]
+    elif (len(word) <= 5):
+        return word[-3:]
+    else:
+        return word[-1]
+
+result = magic_word("thank youpo")
+print(result)
+
+"""
+Define a function that takes a word and a number
+if the number is even and the word has more than 6
+letters, get the last 3 letters.
+"""
