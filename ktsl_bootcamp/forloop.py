@@ -132,6 +132,12 @@ Write a function called greet_names that takes one argument that will be
 a list of names, loops over the list and print "Hi name" for each of the
 name in the list.
 """
+def greet_names(names):
+    for name in names:
+        print(f"Hi {name}")
+
+list_of_names = ["joy,", "arit", "agnes"]
+greet_names(list_of_names)
 
 """
 Write a for loop that prints the multiples of 7 between 0 and 100. Print 
@@ -140,3 +146,10 @@ multiples of 7. Remember that 0 is also a multiple of 7.
 
 A mutiple of 7 is a number that be divided by 7, for example 7, 14, 21, ...
 """
+for num in range(0, 100, 1):
+    if num % 7 == 0:
+        print(num)
+
+print("------------------------------------")
+for i in range(0, 100, 7):
+    print(i)

@@ -85,9 +85,24 @@ Write a while loop that adds 3 to a number while the number
 is still less than 500, and print only the last number after
 while loop is complete.
 """
+print("---------------------------------------")
+num = 0
+while num < 500:
+    # num += 3 # += does two things. both adding 3 to num and reassign it back to num
+    num = num + 3 # same thing like this
+print (num)
 
 """
 Write a function that takes one variable that will be a number
 and prints a number while the number is less than the number passed
 as the variable. print "Done", once the while loop is complete.
 """
+print("--------------------")
+def uptil(num):
+    n = 0
+    while n < num:
+        print(n)
+        n = n + 1
+    print("Done")
+
+uptil(8)
