@@ -77,7 +77,7 @@ for i in range (1, 15):
 print("------------------------------")
 
 # Let us do 5 times table
-size = 5
+size = 12
 
 for i in range(1, size + 1): # 1, 2, 3, 4, 5
     for j in range(1, size + 2): # 1, 2, 3, 4, 5, 6
@@ -89,6 +89,8 @@ for i in range(5):
     print(i, end=' ')
 
 """
-Using a nested a for loop, create a 12 times addition table.
+# ASSIGNMENT
+Create a variable that stores your name and using a for loop
+print your name in 5 columns and 6 rows with 8 spaces between
+each columns.
 """
-
