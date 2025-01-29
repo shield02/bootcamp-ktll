@@ -189,6 +189,14 @@ while counter < len(word):
 print()
 
 print("------------------------------")
+for letter in word:
+    if letter in 'aeiou':
+        print(letter.upper(), end=" ")
+    else:
+        print(letter.lower(), end=" ")
+print()
+
+print("------------------------------")
 
 num = 0
 string = ("evangeline")
