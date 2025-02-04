@@ -173,3 +173,65 @@ cars = ['toyota', 'mercedes', 'lexus']
 print(cars)
 cars.append('hunda')
 print(cars)
+
+# FINDING THE LENGTH OF A LIST
+list_len = len(cars)
+print(list_len)
+
+# REMOVE AN ITEM FROM A LIST
+"""
+To remove an item from a list you can use the remove method.
+"""
+# Example
+numbers = [1, 6, 3, 9, 2, 7]
+print(numbers)
+numbers.remove(3)
+print(numbers)
+
+# How can we remove more than one item in a list
+"""
+To remove more than one item in a list, we use the del statement.
+Notice it is not del method but a statement.
+You can also use the del statement to delete the whole list.
+"""
+# Example
+names = ['john', 'wick', 'jason', 'yellow', 'okon', 'peter']
+# delete the item at index 1
+print(names)
+del names[1]
+print(names)
+
+# delete items from index 2 to 4
+print(names)
+del names[2:5]
+print(names)
+
+# delete the entire list
+del names
+
+# Changing the items of a list
+"""
+We can change the item of a list by assigning new value using the =
+"""
+# Example
+names = ['john', 'wick', 'jason', 'yellow', 'okon', 'peter']
+
+print(names)
+names[3] = "king"
+print(names)
+
+# LOOPING OVER A LIST
+"""
+Since a list is ordered, we can loop over the list
+and work with each item of the list at a time
+"""
+names = ['john', 'wick', 'jason', 'yellow', 'okon', 'peter']
+
+reversed_names = []
+for name in names:
+    reversed_names.append(name)
+    
+print(reversed_names)
+
+# LIST COMPREHENSION
+
