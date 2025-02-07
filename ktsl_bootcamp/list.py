@@ -229,9 +229,55 @@ names = ['john', 'wick', 'jason', 'yellow', 'okon', 'peter']
 
 reversed_names = []
 for name in names:
-    reversed_names.append(name)
+    reversed_names.append(name[::-1])
     
 print(reversed_names)
 
 # LIST COMPREHENSION
+"""
+List comprehension offers a concise way to create a new list based
+on the values of an existing list.
 
+Suppose we have a list of names and we want to create a new list
+of names but the names will be in reverse letters.
+
+We can achive this using a for loop but list comprehension makes
+the code more cleaner and concise than a for loop.
+"""
+# Example
+list_of_reversed_names = [name[::-1] for name in names]
+print(list_of_reversed_names)
+
+# CLASSWORK
+"""
+Create a list of colors, using a list comprehension create a new
+list that has names of the colors in capital letters.
+"""
+colors = ["green", "purple", "yellow", "red", "blue"]
+
+upper_colors = [color.upper() for color in colors]
+print(upper_colors)
+
+list_of_colours = ["white", "grey", "black"]
+list_of_caps_colors = [colour.upper() for colour in list_of_colours]
+print(list_of_caps_colors)
+
+"""
+Create a list of 5 numbers. Using a list comprehension, create a
+new list where each of the numbers are raised to the power of 2. 
+Hint# num**2
+"""
+nums = [2,4,6,8,10]
+double_nums = [num**2 for num in nums]
+print(double_nums)
+
+list_of_number = [6, 12, 18, 24]
+list_of_raised_numbers = [number**2 for number in numbers]
+print(list_of_raised_numbers)
+
+# LIST COMPREHENSION WITH IF STATEMENT
+greater_than_five_numbers = [n for n in nums if n > 5]
+print(greater_than_five_numbers)
+
+# LIST COMPREHENSION WITH IF ELSE STATEMENT
+if_else_vowel = ["Even" if len(color) % 2 == 0 else "Odd" for color in colors]
