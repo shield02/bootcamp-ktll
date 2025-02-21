@@ -281,3 +281,28 @@ print(greater_than_five_numbers)
 
 # LIST COMPREHENSION WITH IF ELSE STATEMENT
 if_else_vowel = ["Even" if len(color) % 2 == 0 else "Odd" for color in colors]
+
+# CLASSWORK
+"""
+Create a list of 5 numbers.
+
+First using a for loop, create another list that has
+each element of the list raised to a power of 3.
+
+Now, using a list comprehension, raise each element of the list
+to a power of 3.
+"""
+numbers = [2, 4, 6, 8, 10]
+cubed_num = []
+for num in numbers:
+    cubed_num.append(num**3)
+print(cubed_num)
+
+list_of_numbers = [2, 4, 6, 8, 10]
+list_of_raised_numbers = [num**3 for num in numbers]
+print(list_of_raised_numbers)
+
+numbers = [2, 4, 6, 8, 10]
+numbers_raise_tripple = [num**3 for num in numbers]
+print(numbers_raise_tripple)
+
