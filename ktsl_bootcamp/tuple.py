@@ -92,3 +92,66 @@ colors = ("blue", "red", "brown", "white", "yellow")
 for color in colors:
     if len(color) > 3 and "e" not in color:
         print(color)
+
+# CLASSWORK
+"""
+Write a function to modify a tuple by adding an 
+element at the end of the tuple.
+Hint: You will need to convert the tuple to a list first.
+"""
+numbers = (1, 2, 3, 4)
+def modify_a_tuple(tuple_elements, new_element):
+    tupl_list = list(tuple_elements)
+    tupl_list.append(new_element)
+
+    return tuple(tupl_list)
+
+result = modify_a_tuple(numbers, 5)
+print(result)
+
+# Because a tuple is immutable, we can do just two things with
+# it. Those are, count the number of times an element of a tuple 
+# is in a tuple and the second method, index, finds the index of
+# an element in a tuple.
+# The two tuple functions are count() and index()
+count_result = numbers.count(1)
+print(count_result)
+
+colors = ('red', 'blue', 'green', 'lemon', 'orange', 'white', 'black', 'brown')
+element_index = colors.index('white')
+print(element_index)
+
+"""
+Write a function that finds the previous element before a
+particular element in a tuple.
+"""
+def find_prev_element_in_tuple(tup, ele):
+    if tup.index(ele) < len(tup):
+        index = tup.index(ele)
+        return tup[index-1] # the index - 1 is the way we find the prev elem
+
+result = find_prev_element_in_tuple(colors, 'white')
+print(result)
+
+"""
+Write a function that will return the next element of a tuple
+only if the element is located after the third element. If it
+is not after the third elemant return the string 
+"Element is not after the third element"
+"""
+def next_element_in_tuple(tup, ele):
+    index = tup.index(ele)
+    if index < 2:
+        return f"Element '{ele}' is not after the third element"
+    return tup[index + 1]
+
+result = next_element_in_tuple(colors, "blue")
+print(result)
+
+result = next_element_in_tuple(colors, "black")
+print(result)
+
+"""
+Write a function that returns an element of a tuple
+if the element appears more than 2 times.
+"""
