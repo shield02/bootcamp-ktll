@@ -155,3 +155,9 @@ print(result)
 Write a function that returns an element of a tuple
 if the element appears more than 2 times.
 """
+
+"""
+Creating a tuple that has just one element.
+"""
+one_element_tuple = ("tuple element",) # adding the , makes it a one lement tuple
+print(one_element_tuple)
