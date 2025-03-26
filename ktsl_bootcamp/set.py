@@ -81,3 +81,92 @@ more_books = ['business pro', 'purple times', 'night owl']
 # We can update the books
 books.update(more_books)
 print(books)
+
+# CLASSWORK
+"""
+Create an empty set and add only even numbers 
+between 1 and 1000 to it
+"""
+nums = set()
+# Approach using add()
+for num in range(1, 1000):
+    if num % 2 == 0:
+        nums.add(num)
+print(nums)
+
+# Another approach using update()
+even_nums = [num for num in range(1, 1_000) if num % 2 == 0]
+nums.update(even_nums)
+
+# FINDING THE LENGTH OF A SET
+"""
+You can find the length of a set by using the len()
+function
+"""
+set_length = len(nums)
+print(set_length)
+
+# REMOVE AN ELEMENT OF A SET
+"""
+To remove one element of a set, we use the discard() function
+"""
+programming_languages = {"Python", "Java", "PHP", "Go", "Kotlin", "Swift"}
+print(f"Set before item removed: {programming_languages}")
+programming_languages.discard("Go")
+print(f"Set after item is removed: {programming_languages}")
+
+# SORTING A SET
+"""
+A set can be sorted using the sorted() function. The function returns
+a new sorted list from the elements in the set.
+N/B: that it will not sort the set itself
+"""
+new_sorted_set = sorted(programming_languages)
+print(new_sorted_set)
+
+# CLASSWORK
+"""
+Write a program that will take items from a list and use
+those items to create a set that is less than equal to
+5 elements.
+
+The list will have 7 string elements.
+"""
+list_colors = ['red', 'green', 'white', 'red', 'blue', 'white', 'brown', 'yellow', 'lemon', 'black']
+set_colors = set()
+index = 0
+while len(set_colors) < 5:
+    list_item = list_colors[index]
+    set_colors.add(list_item)
+    index = index + 1
+    print(f"The item from list is, {list_item} and the length of the set is: {len(set_colors)}")
+print(f"The full set is: {set_colors}")
+
+# ENUMERATE
+"""
+The enumerate function adds a counter to an iterable and returns it
+as part of the enumerate object.
+Example:
+list_of_colors = ['red', 'blue']
+When you use enumerate with the list of colors, it will produce something
+like this: (0, 'red'), (1, 'blue')
+"""
+enum_list_colors = enumerate(list_colors)
+print(list(enum_list_colors))
+
+enum_set1 = set()
+for index, _ in enumerate(list_colors):
+    item = list_colors[index]
+    if len(set_colors) < 5:
+        enum_set1.add(item)
+    else:
+        break
+print(f"The full set is: {set_colors}")
+
+enum_set2 = set()
+for _, color in enumerate(list_colors):
+    if len(set_colors) < 5:
+        enum_set2.add(color)
+    else:
+        break
+print(f"The full set is: {set_colors}")
