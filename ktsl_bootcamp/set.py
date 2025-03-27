@@ -170,3 +170,71 @@ for _, color in enumerate(list_colors):
     else:
         break
 print(f"The full set is: {set_colors}")
+
+# SET OPERATIONS
+"""
+Ptyhon provides some built-in methods that is used to perform some mathematical
+set operations like Union, Intersection, Subtraction etc.
+
+# UNION OF TWO SETS
+---------------------------------------------------------------------------------
+The union of two sets A and B includes all the elements of A and B.
+
+We can use | or the union() to perform the union of two sets.
+"""
+# Example
+a = {1, 5, 9, 2}
+b = {2, 8, 7, 3}
+
+# Performing a union of two sets using |
+a_union_b = a | b
+print(f"The union of two sets using |: {a_union_b}")
+
+# Performing a union using the constructor
+a_union_b_constructor = a.union(b)
+print(f"The union of two sets using constructor: {a_union_b_constructor}")
+
+# CLASSWORK
+"""
+Create two sets made up off strings and union the two sets using
+the constructor.
+"""
+a = {"car", "ball", "doll"}
+b = {"car", "bike", "puzzle"}
+
+put_together = a.union(b)
+print(put_together)
+
+# INTERSECTION OF SETS
+"""
+The intersection of two sets includes only elements that common among
+the two sets.
+
+To perform the intersection of two sets in Python you use the & or the
+intersection() constructor.
+"""
+a = {1, 5, 9, 2}
+b = {2, 8, 7, 3}
+
+a_intersect_b = a & b
+print(f"The intersection using &: {a_intersect_b}")
+
+# CLASSWORK
+"""
+Create two sets made up off strings and intersect the two sets using
+the constructor.
+"""
+a = {"car", "ball", "doll"}
+b = {"car", "bike", "puzzle"}
+common_toys = a.intersection(b)
+print(f"Intersected set using constructor: {common_toys}")
+
+# CLASSWORK
+"""
+Write a function to create a new set that contains the identical items from two given sets.
+
+Return the identical elements in the two given sets.
+For inputs with sets {1, 2, 3, 4} and {3, 4, 5, 6}, the return value should be either {3, 4} or {4, 3}.
+"""
+def identical_items():
+    pass
