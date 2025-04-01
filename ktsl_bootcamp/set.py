@@ -238,3 +238,51 @@ For inputs with sets {1, 2, 3, 4} and {3, 4, 5, 6}, the return value should be e
 """
 def identical_items():
     pass
+
+a = {1,2,3,4}
+b = {3,4,5,6}
+
+def identical_items(set_1, set_2):
+    result = set_1 & set_2
+
+    return result
+
+print(identical_items(a,b))
+
+
+# DIFFERENCE BETWEEN TWO SETS
+"""
+The difference between two sets A and B includes element is A that are
+not present in B.
+
+You can use - or the difference constructor to perform the set difference.
+"""
+a = {1,2,3,4}
+b = {3,4,5,6}
+
+set_difference = a - b
+print(F"Set difference using -: {set_difference}")
+
+set_difference_with_const = a.difference(b)
+print(f"Set difference with constructor: {set_difference_with_const}")
+
+# CLASSWORK
+"""
+If I have two sets and I want to get all the elements of both sets
+in one new set, write a function that can always do that for me.
+"""
+even = {2,4,6,8,10}
+odd = {1,3,5,7,9}
+
+def first_ten(a,b):
+     result = a.union(b)
+     return result 
+
+print(f"The union of two sets: {first_ten(even,odd)}")
+
+
+"""
+Write a function that takes two sets and returns only the items
+that are in the second set passed in the argumnet that are not
+in the first set.
+"""
