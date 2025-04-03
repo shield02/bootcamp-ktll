@@ -286,3 +286,10 @@ Write a function that takes two sets and returns only the items
 that are in the second set passed in the argumnet that are not
 in the first set.
 """
+males = {"uduak", "paul", "dan"}
+females = {"joy", "Regina", "uduak"}
+
+def male_female(x,y):
+    result = y-x
+    return result 
+print(f"both gender can answer, {male_female(males,females)}")
