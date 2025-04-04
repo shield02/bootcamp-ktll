@@ -37,3 +37,58 @@ location_long_lat = {
     "ikono": (20, 52), 
     "abak": (50, 50)
 }
+
+# CLASSWORK
+"""
+Create a dictionary of three countries and their capital and
+print out the dictionary.
+"""
+country_capitals = {
+    "Japan": "Tokoyo",
+    "Ghana": "Accra",
+    "Cameroun": "Yaunde",
+}
+
+print(country_capitals)
+
+# ADDING AN ITEM TO A DICTIONARY
+"""
+To add an item to a dictionary you can provide a new key and
+assign a value to the key.
+"""
+country_capitals["Southafrica"] = "johannesburg"
+country_capitals["Japan"] = "Tokyo"
+country_capitals["Nigeria"] = "Abuja"
+
+# ACCESSING THE ITEMS OF A DICTIONARY
+"""
+You can access the items of a dictionary by using the index method
+or by using the get() method.
+"""
+# Examples using the index method
+"""
+Using the index method has to do with writing the name of dictionary
+variable with [] and providing any valid key inside the [].
+"""
+print(country_capitals["Cameroun"])
+print(country_capitals["Nigeria"])
+
+# Examples using the get() method
+"""
+Using the get method allows you provide a default value incase the key
+provided doesn't exist in the dictionary.
+"""
+print(country_capitals.get("Japan", "We don't have this country yet in our dictionary."))
+print(country_capitals.get("Brazil", "We don't have this country yet in our dictionary."))
+
+print(country_capitals["Niger"])
+
+# ASSIGNMENT
+"""
+Create a dictionary of 5 countries and their population.
+
+Write a function that takes a country and a dictionay as the argumnets
+and if the country is in the dictionary return the corresponding population
+if it is not return a default value in the format, "The country {this should be the 
+name of the country that was provided as the argumnet} is not yet covered."
+"""
