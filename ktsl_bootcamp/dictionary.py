@@ -81,7 +81,7 @@ provided doesn't exist in the dictionary.
 print(country_capitals.get("Japan", "We don't have this country yet in our dictionary."))
 print(country_capitals.get("Brazil", "We don't have this country yet in our dictionary."))
 
-print(country_capitals["Niger"])
+# print(country_capitals["Niger"])
 
 # ASSIGNMENT
 """
@@ -92,3 +92,16 @@ and if the country is in the dictionary return the corresponding population
 if it is not return a default value in the format, "The country {this should be the 
 name of the country that was provided as the argumnet} is not yet covered."
 """
+countries = {"ghana": 550, "algeria": 200, "nigeria": 720, "mali": 130}
+
+def africa(country, dictionary):
+    return dictionary.get(country, f"The country `{country}` is not yet covered.")
+
+result = africa("ghana", countries)
+print(result)
+
+result = africa("mali", countries)
+print(result)
+
+result = africa("cameroun", countries)
+print(result)
