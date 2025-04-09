@@ -105,3 +105,11 @@ print(result)
 
 result = africa("cameroun", countries)
 print(result)
+
+# USING THE INDEX METHOD
+"""
+Using the index method you will add [] to the variable
+and provide any value as the key
+"""
+dict_item = countries['algeria']
+print(dict_item)
