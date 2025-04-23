@@ -113,3 +113,45 @@ and provide any value as the key
 """
 dict_item = countries['algeria']
 print(dict_item)
+
+# REMOVING ITEM FROM A DICTIONARY
+"""
+We can remove an itm from a dictionary using the del statement.
+"""
+# Example
+states_and_capitals = {
+    "akwa-ibom": "uyo",
+    "abia": "umahia",
+    "buchi": "buchi",
+    "imo": "owerri"
+}
+
+# We can delete the abia item
+del states_and_capitals["abia"]
+print(states_and_capitals)
+
+# CHANGE THE VALUE OF AN ELEMENT IN A DICTIONARY
+states_and_capitals["buchi"] = "buuchi"
+print(states_and_capitals)
+
+"""
+# CLASSWORK
+Create a dictionary for countries and their popluations.
+1. Then delete on of the elements
+2. Update one of the elements
+"""
+population = {
+    "zimbabwe" : 70,
+    "algeria": 100,
+    "nigeria": 1000
+}
+del population["algeria"]
+print(population)
+
+population["zimbabwe"] = 850
+print(population)
+
+# LOOPING OVER A DICTIONARY
+"""
+
+"""
