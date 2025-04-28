@@ -153,5 +153,53 @@ print(population)
 
 # LOOPING OVER A DICTIONARY
 """
+Looping is also known as iteration.
 
+A dictionary is an ordered collecting of items, therefore it
+maintains the order of its items.
+
+We can iterate through a dictionary keys one after the other using
+a for loop.
 """
+# Create a dictionary of 5 elements for staff and their salary
+staff_salaries = {
+    "John Ekpo": 50000,
+    "Jane Asabor": 60000,
+    "Bob Ntuen": 55000,
+    "Alice Iyak": 70000,
+    "Mike Etidot": 45000
+}
+
+# This will give you just the keys
+for key in staff_salaries:
+    print(key)
+
+# We use the key to index into the dictionary and get the value
+for key in staff_salaries:
+    print(f"Key: {key} - Value: {staff_salaries[key]}")
+
+# We use a dictionary method to get the key
+for key in staff_salaries.keys():
+    print(f"Key: {key}")
+
+# We use a dictionary method to get the value
+for value in staff_salaries.values():
+    print(f"Values: {value}")
+
+# We need both key and value at the same time
+for key, value in staff_salaries.items():
+    print(f"Key: {key} - Value: {value}")
+
+# CLASSWORK
+# Create a dictionary of 5 items and loop over it using the keys() and values() method
+age = {
+         "Greatness" : 7,
+         "Gospel" : 6,
+         "Gracefield" : 4,
+         "Jesse" : 2,
+         "Olivia" : 1,
+        }
+
+for key, value in age.items():
+    print (f"Key:{key} - Value:{value}")
+
