@@ -203,3 +203,56 @@ age = {
 for key, value in age.items():
     print (f"Key:{key} - Value:{value}")
 
+
+# CLASSWORK
+"""
+Create a dictionary of companies with their estimated net worth.
+And loop over it to print "key - value"
+"""
+x = {
+    "coca_cola" : 80000,
+    "exxon_mobil" : 20000,
+    "gopius" : 172000,
+    "unilever" : 58000,
+    }
+
+for key, value in x.items():
+     print (f"Key:{key} - Value:{value}")
+
+# DICTIONARY MEMBERSHIP TEST
+"""
+We can check wheather a key is in the dictionary using the in and not in operators
+
+The in operator checks wheather a key exists in a dictionary and does not check
+wheather a value exist or not.
+"""
+print("coca_cola" in x)
+print("pepsi" not in x)
+
+# PTYHTON DICTIONARY METHODS
+"""
+There are common functions that are used with dictionary in Python
+They include, pop, update, keys, values, items, copy etc
+
+pop - removes the item with the specified key
+copy - creates a copy of the dictionary
+"""
+# POP EXAMPLE
+# item = x.pop("coca_cola")
+# print(item)
+print(x)
+
+item = x.pop("pepsi", "facebook")
+print(item)
+print(x)
+
+# COPY EXAMPLE
+new_x = x.copy()
+
+print(x)
+print(new_x)
+
+item = new_x.pop("coca_cola")
+print(new_x)
+print(x)
+    
