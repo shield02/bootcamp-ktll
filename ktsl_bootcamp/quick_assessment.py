@@ -23,13 +23,18 @@ while True:
         print("Not a number")
         continue
 
-    if score >= 0 and score <= 100:
-        total_score += score
-        counter += 1
-    else:
-        counter -= 1
-        print (f"Number outside the range 0-100 inclusive")
+    if counter == 1 and score == 999:
+        print("No results entered")
         break
+    elif score == 999:
+        break
+    elif score < 0 or score > 100:
+        print("Number outside the range 0-100 inclusive")
+        continue
+
+    total_score += score
+    counter += 1
 
 average_score = total_score/counter
-print(f"Average marks: {average_score}")
+if counter > 1:
+    print(f"Average marks: {average_score}")
