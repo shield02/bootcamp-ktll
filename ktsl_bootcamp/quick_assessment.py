@@ -37,4 +37,31 @@ while True:
 
 average_score = total_score/counter
 if counter > 1:
-    print(f"Average marks: {average_score}")
+    print(f"Average marks: {average_score:.1f}")
+
+
+"""
+# QUESTION 2
+------------------------------------------------------------------------
+Property investment might be a great way to make money. Many people invest 
+their money in real estate. They purchase properties for renting and, in 
+the long term, to sell for a higher value.
+
+Write a Python program to calculate the estimated future value of a 
+property after a give number of years.
+
+Assume the value of the property gets appreciated according to the 
+following rules:
+
+If the property is located 20km or less from the city, the value gets 
+appreciated by 2% yearly.
+More than 20km from the city, properties are appreciated only by 1%.
+
+Your program should read the current value of a property, the distance to 
+the city and the number of years to value the property at. Then, the 
+program should return the future value of the property. This estimate will 
+help the investor to decide when to sell it.
+"""
+CITY_BORDER_THRESHOLD = 20.0
+APPRECIATION_RATE_CLOSE = 0.02
+APPRECIATION_RATE_FAR = 0.01
