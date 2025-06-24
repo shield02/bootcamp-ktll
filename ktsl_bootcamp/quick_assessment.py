@@ -66,12 +66,27 @@ CITY_BORDER_THRESHOLD = 20.0
 APPRECIATION_RATE_CLOSE = 0.02
 APPRECIATION_RATE_FAR = 0.01
 
-def estimated_future_value(value, distance,years):
+def estimated_future_value(value, distance, years):
     interest = 0.02 if distance <= 20 else 0.01
     new_value = value * (1 + interest)**years 
     return round (new_value, 2)
 
 print(estimated_future_value(3_000_000, 2, 4))
+
+# ----------------------------------------------------------------------------------
+
+current_value = float(input("Enter the current value for the property ($): "))
+distance_to_city = float(input("Enter the distance to the city (km): "))
+number_of_years = int(input("Enter the number of years to estimate future value: "))
+
+print("Year    Value($)")
+print("====================")
+
+interest = 0.02 if distance_to_city <= 20 else 0.01
+
+for year in range(1, number_of_years+1):
+    current_value *= (1 + interest)
+    print(f"\t{year} \t {round(current_value,2)}")
 
 """
 Year    Value($)
