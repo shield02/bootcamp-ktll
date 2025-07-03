@@ -86,7 +86,7 @@ interest = 0.02 if distance_to_city <= 20 else 0.01
 
 for year in range(1, number_of_years+1):
     current_value *= (1 + interest)
-    print(f"\t{year} \t {round(current_value,2)}")
+    print(f"{year:>4} \t{current_value:,.2f}")
 
 """
 Year    Value($)
@@ -96,3 +96,8 @@ Year    Value($)
    3    3,183,624.00
    4    3,247,296.48
 """
+
+amount = 10
+count = 1
+while count < 5:
+    amount *= 10
